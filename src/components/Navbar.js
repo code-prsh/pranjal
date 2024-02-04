@@ -42,17 +42,18 @@ const Navbar = () => {
           position: "fixed",
           // boxShadow: "0 0 10px rgba(1, 1, 1, 0.5)",
           zIndex: 2,
-          backdropFilter: "blur(10px)",
+          backdropFilter: "blur(10px)"
         }}
         // bgcolor={"#AF69EE"}
+        
       >
         <Stack
           direction={"row"}
-          justifyContent={{ sm: "space-between", xs: "space-around" }}
+          justifyContent={{sm: "space-between", xs: "space-around"}}
           alignItems={"center"}
         >
           <Stack
-            direction={"row"}
+            direction={"row" }
             // p={{ xs: 2, sm: 3 }}
             justifyContent={"center"}
             alignItems={"center"}
@@ -67,21 +68,12 @@ const Navbar = () => {
             />
             <Typography
               variant="body2"
-              sx={{
-                fontWeight: "bold",
-                color: "#373737",
-                mt: { xs: 1, sm: 0 },
-              }}
+              sx={{ fontWeight: "bold", color: "#373737", mt: { xs: 1, sm: 0 } }}
             >
               PRANJAL SHARMA
             </Typography>
           </Stack>
-          <Stack
-            direction={"row"}
-            p={{ xs: 2, sm: 3 }}
-            pr={{ xs: 0, sm: 7 }}
-            spacing={7}
-          >
+          <Stack direction={"row"} p={{ xs: 2, sm: 3 }} pr={{ xs: 0, sm: 7 }} spacing={7}>
             {/* Hamburger menu icon for small devices */}
             <IconButton
               edge="end"
@@ -101,25 +93,25 @@ const Navbar = () => {
                 color: "#373737",
                 cursor: "pointer",
                 position: "relative", // Set position to relative
-                overflow: "hidden", // Hide overflow for the pseudo-element
-                display: "inline-block", // Ensure pseudo-element is positioned correctly
-                textDecorationColor: "grey",
-                
-                "&:before": {
-                  content: '""',
-                  position: "absolute",
-                  left: "50%",
-                  bottom: 0,
-                  width: 0,
-                  height: "3px",
-                  backgroundColor: "#AF69EE",
-                  transition: "width 0.3s ease-in-out, left 0.3s ease-in-out", // Add transition properties
-                  transform: "translateX(-50%) translateX(+50%)", // Center the pseudo-element
-                },
-                "&:hover:before": {
-                  width: "100%",
-                  left: 0,
-                },
+    overflow: "hidden", // Hide overflow for the pseudo-element
+    display: "inline-block", // Ensure pseudo-element is positioned correctly
+    textDecorationColor: "grey",
+    display: { xs: "none", sm: "flex" },
+    '&:before': {
+      content: '""',
+      position: "absolute",
+      left: "50%",
+      bottom: 0,
+      width: 0,
+      height: "3px",
+      backgroundColor: "#AF69EE",
+      transition: "width 0.3s ease-in-out, left 0.3s ease-in-out", // Add transition properties
+      transform: "translateX(-50%) translate(+50%)", // Center the pseudo-element
+    },
+    '&:hover:before': {
+      width: "100%",
+      left: 0,
+    },
               }}
             >
               HOME
@@ -133,25 +125,25 @@ const Navbar = () => {
                 color: "#373737",
                 cursor: "pointer",
                 position: "relative", // Set position to relative
-                overflow: "hidden", // Hide overflow for the pseudo-element
-                display: "inline-block", // Ensure pseudo-element is positioned correctly
-                textDecorationColor: "grey",
-                
-                "&:before": {
-                  content: '""',
-                  position: "absolute",
-                  left: "50%",
-                  bottom: 0,
-                  width: 0,
-                  height: "3px",
-                  backgroundColor: "#AF69EE",
-                  transition: "width 0.3s ease-in-out, left 0.3s ease-in-out", // Add transition properties
-                  transform: "translateX(-50%) translateX(+50%)", // Center the pseudo-element
-                },
-                "&:hover:before": {
-                  width: "100%",
-                  left: 0,
-                },
+    overflow: "hidden", // Hide overflow for the pseudo-element
+    display: "inline-block", // Ensure pseudo-element is positioned correctly
+    textDecorationColor: "grey",
+    display: { xs: "none", sm: "flex" },
+    '&:before': {
+      content: '""',
+      position: "absolute",
+      left: "50%",
+      bottom: 0,
+      width: 0,
+      height: "3px",
+      backgroundColor: "#AF69EE",
+      transition: "width 0.3s ease-in-out, left 0.3s ease-in-out", // Add transition properties
+      transform: "translateX(-50%) translate(+50%)", // Center the pseudo-element
+    },
+    '&:hover:before': {
+      width: "100%",
+      left: 0,
+    },
               }}
             >
               ABOUT
@@ -160,30 +152,30 @@ const Navbar = () => {
               onClick={() => handleNavLinkClick("#projects")}
               variant="body2"
               sx={{
-                fontWeight: "bold",
-                color: "#373737",
-                cursor: "pointer",
-                position: "relative", // Set position to relative
-                overflow: "hidden", // Hide overflow for the pseudo-element
-                display: "inline-block", // Ensure pseudo-element is positioned correctly
-                textDecorationColor: "grey",
-                
-                "&:before": {
-                  content: '""',
-                  position: "absolute",
-                  left: "50%",
-                  bottom: 0,
-                  width: 0,
-                  height: "3px",
-                  backgroundColor: "#AF69EE",
-                  transition: "width 0.3s ease-in-out, left 0.3s ease-in-out", // Add transition properties
-                  transform: "translateX(-50%) translateX(+50%)", // Center the pseudo-element
-                },
-                "&:hover:before": {
-                  width: "100%",
-                  left: 0,
-                },
-              }}
+    fontWeight: "bold",
+    color: "#373737",
+    cursor: "pointer",
+    position: "relative", // Set position to relative
+    overflow: "hidden", // Hide overflow for the pseudo-element
+    display: "inline-block", // Ensure pseudo-element is positioned correctly
+    textDecorationColor: "grey",
+    display: { xs: "none", sm: "flex" },
+    '&:before': {
+      content: '""',
+      position: "absolute",
+      left: "50%",
+      bottom: 0,
+      width: 0,
+      height: "3px",
+      backgroundColor: "#AF69EE",
+      transition: "width 0.3s ease-in-out, left 0.3s ease-in-out", // Add transition properties
+      transform: "translateX(-50%) translate(+50%)", // Center the pseudo-element
+    },
+    '&:hover:before': {
+      width: "100%",
+      left: 0,
+    },
+  }}
             >
               PROJECTS
             </Typography>
@@ -195,25 +187,25 @@ const Navbar = () => {
                 color: "#373737",
                 cursor: "pointer",
                 position: "relative", // Set position to relative
-                overflow: "hidden", // Hide overflow for the pseudo-element
-                display: "inline-block", // Ensure pseudo-element is positioned correctly
-                textDecorationColor: "grey",
-                
-                "&:before": {
-                  content: '""',
-                  position: "absolute",
-                  left: "50%",
-                  bottom: 0,
-                  width: 0,
-                  height: "3px",
-                  backgroundColor: "#AF69EE",
-                  transition: "width 0.3s ease-in-out, left 0.3s ease-in-out", // Add transition properties
-                  transform: "translateX(-50%) translateX(+50%)", // Center the pseudo-element
-                },
-                "&:hover:before": {
-                  width: "100%",
-                  left: 0,
-                },
+    overflow: "hidden", // Hide overflow for the pseudo-element
+    display: "inline-block", // Ensure pseudo-element is positioned correctly
+    textDecorationColor: "grey",
+    display: { xs: "none", sm: "flex" },
+    '&:before': {
+      content: '""',
+      position: "absolute",
+      left: "50%",
+      bottom: 0,
+      width: 0,
+      height: "3px",
+      backgroundColor: "#AF69EE",
+      transition: "width 0.3s ease-in-out, left 0.3s ease-in-out", // Add transition properties
+      transform: "translateX(-50%) translate(+50%)", // Center the pseudo-element
+    },
+    '&:hover:before': {
+      width: "100%",
+      left: 0,
+    },
               }}
             >
               CONTACT
@@ -224,23 +216,11 @@ const Navbar = () => {
       {/* Drawer for small devices */}
       <Drawer anchor="right" open={isDrawerOpen} onClose={handleDrawerClose}>
         <List>
-          {["#home", "#about", "#projects", "#contact"].map(
-            (targetId, index) => (
-              <ListItem
-                button
-                key={index}
-                onClick={() => handleNavLinkClick(targetId)}
-              >
-                <ListItemText
-                  primary={
-                    targetId === "#"
-                      ? "HOME"
-                      : targetId.substring(1).toUpperCase()
-                  }
-                />
-              </ListItem>
-            )
-          )}
+          {["#home", "#about", "#projects", "#contact"].map((targetId, index) => (
+            <ListItem button key={index} onClick={() => handleNavLinkClick(targetId)}>
+              <ListItemText primary={targetId === "#" ? "HOME" : targetId.substring(1).toUpperCase()} />
+            </ListItem>
+          ))}
         </List>
       </Drawer>
     </>
@@ -248,3 +228,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
