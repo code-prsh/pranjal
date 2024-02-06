@@ -53,7 +53,7 @@ const Projects = () => {
                 </Stack>
                 <Stack direction="row" pt={3} spacing={2}>
                   <Button
-                    href="https://code-prsh.github.io/portfolio/"
+                    href="https://code-prsh.github.io/pranjal/"
                     variant="contained"
                     size="medium"
                     sx={{
@@ -70,7 +70,7 @@ const Projects = () => {
                     </Typography>
                   </Button>
                   <Button
-                    href="https://github.com/code-prsh/portfolio"
+                    href="https://github.com/code-prsh/pranjal"
                     variant="contained"
                     size="medium"
                     sx={{
